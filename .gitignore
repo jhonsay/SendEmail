@@ -13,3 +13,5 @@ target/classes/activation.jar
 target/classes/mail.jar
 target/maven-archiver/pom.properties
 target/SendEmail-0.0.1-SNAPSHOT.jar
+target/surefire-reports/enviartest.EnviarTest.txt
+target/surefire-reports/TEST-enviartest.EnviarTest.xml
