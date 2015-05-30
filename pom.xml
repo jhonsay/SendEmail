@@ -30,6 +30,12 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/src/main/resources/activation.jar</systemPath>
     </dependency>
+    <dependency>
+      <groupId>maven</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>1.9.javadoc</version>
+      <type>javadoc.jar</type>
+    </dependency>
   </dependencies>
   <properties>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
