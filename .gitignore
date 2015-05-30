@@ -9,3 +9,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+target/classes/activation.jar
+target/classes/mail.jar
+target/maven-archiver/pom.properties
+target/SendEmail-0.0.1-SNAPSHOT.jar
