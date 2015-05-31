@@ -17,7 +17,7 @@ public class EmailSenderTest
     {
         this.username = "pavel";
         this.password = "jenkins";
-        this.emailSender = new EmailSender(username, password);
+        this.emailSender = new EmailSender(this.username, this.password);
     }
   
     @Test
@@ -33,7 +33,7 @@ public class EmailSenderTest
         String asunto = "Que tal";
         String mensaje = "Que pasa cristo? Como va la vida?";
         boolean esEnviado = this.emailSender.enviar(destino, asunto, mensaje);
-        assertTrue(esEnviado);
+        assertFalse(esEnviado);
     }
     
     @Test
