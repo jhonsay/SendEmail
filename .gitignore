@@ -19,3 +19,4 @@ target/surefire-reports/enviartest.EmailSenderTest.txt
 *.xml
 target/surefire-reports/TEST-enviartest.EnviarTest.xml
 target/surefire-reports/TEST-enviartest.EmailSenderTest.xml
+*.prefs
