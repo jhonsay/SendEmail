@@ -18,7 +18,7 @@ public class Main {
     * @author      Pavel
     * @author      Cristo
     * @version     %I%, %G%
-    * @param       argumentos por defecto
+    * @param args  argumentos por defecto
     */
     public static void main(String[] args) {
         EnviarEmailForm f = new EnviarEmailForm();
