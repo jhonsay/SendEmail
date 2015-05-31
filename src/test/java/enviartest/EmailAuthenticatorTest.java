@@ -26,5 +26,17 @@ public class EmailAuthenticatorTest
         EmailAuthenticator emailAuth_B = new EmailAuthenticator(this.username, this.password);
         assertTrue(emailAuth_B.equals(this.emailAuth));
     }
+    
+    @Test
+    public void emailAuthenticatorEquals_B()
+    {
+        EmailAuthenticator emailAuth_B = new EmailAuthenticator(this.username, this.password);
+        assertTrue(this.emailAuth.equals(this.emailAuth));
+    }
 
+    @Test
+    public void hashCodeTest()
+    {
+        assertEquals(-1439404585, this.emailAuth.hashCode());
+    }
 }
