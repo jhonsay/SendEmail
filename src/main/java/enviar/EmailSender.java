@@ -45,7 +45,7 @@ public class EmailSender {
      * @param  destino dirección del destinatario, ej: "pavel@gmail.com"
      * @param  asunto  asunto del correo electronico
      * @param  mensaje el contenido del correo electronico
-     * @return boolean, true si se ha enviado correcto, false si hubo fallos
+     * @return boolean true si se ha enviado correcto, false si hubo fallos
      */
     public boolean enviar(String destino, String asunto, String mensaje) {
         try {
