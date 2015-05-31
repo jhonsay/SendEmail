@@ -30,5 +30,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
 	<classpathentry kind="lib" path="C:/Users/Pavel/workspace/SendEmail/src/main/resources/activation.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Pavel/workspace/SendEmail/src/main/resources/mail.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_45"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
