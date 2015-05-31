@@ -15,12 +15,11 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 /**
+ * Establece las propriedades de conexión con el servidor de correo
+ * electronico y envia el correo electronico a su destinatorio
  * 
  * @author Pavel
  * @author Cristo
- *
- * Establece las propriedades de conexión con el servidor de correo
- * electronico y envia el correo electronico a su destinatorio
  *
  */
 
