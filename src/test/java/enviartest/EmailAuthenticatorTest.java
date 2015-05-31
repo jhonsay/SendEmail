@@ -4,8 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Before;
 
-import enviar.EmailAuthenticator;;
-
+import enviar.EmailAuthenticator;
 
 public class EmailAuthenticatorTest
 {
