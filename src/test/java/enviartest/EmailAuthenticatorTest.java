@@ -36,27 +36,27 @@ public class EmailAuthenticatorTest
     @Test
     public void emailAuthenticatorEquals_C()
     {
-        assertTrue(this.emailAuth.equals(null));
+        assertFalse(this.emailAuth.equals(null));
     }
     
     @Test
     public void emailAuthenticatorEquals_D()
     {
-        assertTrue(this.emailAuth.equals(new String()));
+        assertFalse(this.emailAuth.equals(new String()));
     }
     
     @Test
     public void emailAuthenticatorEquals_E()
     {
         EmailAuthenticator emailAuth_B = new EmailAuthenticator(this.username, null);
-        assertTrue(emailAuth_B.equals(this.emailAuth));
+        assertFalse(emailAuth_B.equals(this.emailAuth));
     }
     
     @Test
     public void emailAuthenticatorEquals_F()
     {
         EmailAuthenticator emailAuth_B = new EmailAuthenticator(null, this.password);
-        assertTrue(emailAuth_B.equals(this.emailAuth));
+        assertFalse(emailAuth_B.equals(this.emailAuth));
     }
 
     @Test
