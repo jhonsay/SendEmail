@@ -19,18 +19,14 @@ import javax.swing.JTextField;
 import enviar.EmailSender;
 
 /**
+ * Clase que representa la ventana principal 
+ * de la aplicacion al ejecutar
  * 
  * @author Pavel
  * @author Cristo
- *
- * Clase que representa la ventana principal 
- * de la aplicacion al ejecutar
  */
 public class EnviarEmailForm extends JFrame {
 
-/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	// DECLARACIONES
     JButton enviarButton;
@@ -47,11 +43,18 @@ public class EnviarEmailForm extends JFrame {
     JPanel textAreaPanel;
 
 // CONSTRUCTOR
+    /**
+     * Constructor de la ventana,
+     * inicializa el formulario y sus compentes
+     */
     public EnviarEmailForm(){
         initForm();
         initComponents();
     }
 
+    /**
+     * Inicialización del formulario de envio de correo electronico
+     */
     private void initForm(){
         setTitle("Enviar eMail");
         setSize(600,600);
@@ -59,6 +62,9 @@ public class EnviarEmailForm extends JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
+    /**
+     * Inicialización de los componentes del formulario de envio de correo electronico
+     */
     private void initComponents(){
 
         enviarButton = new JButton("Enviar"); 
@@ -69,7 +75,19 @@ public class EnviarEmailForm extends JFrame {
         });
 
         vaciarButton = new JButton("Vaciar");
+        vaciarButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                vaciar();
+            }
+        });
+        
         cerrarButton = new JButton("Cerrar");
+        cerrarButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                cerrar();
+            }
+        });
+        
         direccionLabel = new JLabel("eMail: ");
         asuntoLabel = new JLabel("Asunto: ");
         direccionTextField = new JTextField();
@@ -119,6 +137,9 @@ public class EnviarEmailForm extends JFrame {
 
     }
 
+    /**
+     * Envia el correo a una cuenta predeterminada 
+     */
     private void enviar(){
         EmailSender sender = new EmailSender("ecosaturno_oliver@yahoo.es", "43826914t");
         boolean resultado = sender.enviar("tabita@hotmail.com", "Prueba", "Hola");
@@ -127,4 +148,24 @@ public class EnviarEmailForm extends JFrame {
                     "Mensaje no enviado", JOptionPane.ERROR_MESSAGE);
         }
     }
+    
+    /**
+     * Mejora de codigo, implementado la limpieza de los 
+     * campos de "dirección, asunto y contenido" del correo electronico
+     */
+    private void vaciar(){
+        
+        direccionTextField.setText("");
+        asuntoTextField.setText("");
+        mensajeTextArea.setText("");
+        direccionTextField.updateUI();
+    }
+    
+    /**
+     * Mejora de codigo, implementado el cierre de la aplicación
+     */
+    private void cerrar(){
+        System.exit(DISPOSE_ON_CLOSE);
+    }
+    
 }
