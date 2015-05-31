@@ -4,12 +4,11 @@ import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 
 /**
+ * Autentica el usuario contra el servidor de correo electronico
  * 
  * @author Pavel
  * @author Cristo
  * 
- * Autentica el usuario contra el servidor de correo electronico
- *
  */
 
 public class EmailAuthenticator extends Authenticator {
