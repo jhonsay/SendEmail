@@ -8,13 +8,15 @@ package enviaremail;
  * @since       1.0
  */
 public class Main {
-
-    private Main(){
-        
-    }
+    
+    /**
+     * Constructor privado de la clase principal
+     */
+    private Main(){}
     
     /**
     * Funcion main inicial
+    * 
     * @author      Pavel
     * @author      Cristo
     * @version     %I%, %G%
