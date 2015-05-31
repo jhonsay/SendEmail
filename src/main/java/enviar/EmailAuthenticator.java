@@ -58,7 +58,7 @@ public class EmailAuthenticator extends Authenticator {
     }
 
     /**
-     * Operador de igualdad para los objetos
+     * Mejora de codigo, operador de igualdad para los objetos
      * 
      * @param obj       objecto de la misma clase EmailAuthenticator
      * @return boolean  true si son iguales, false si son distintos
