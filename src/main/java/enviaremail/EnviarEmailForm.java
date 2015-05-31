@@ -140,7 +140,7 @@ public class EnviarEmailForm extends JFrame {
     /**
      * Envia el correo a una cuenta predeterminada 
      */
-    private void enviar(){
+    public void enviar(){
         EmailSender sender = new EmailSender("ecosaturno_oliver@yahoo.es", "43826914t");
         boolean resultado = sender.enviar("tabita@hotmail.com", "Prueba", "Hola");
         if (!resultado){
@@ -153,7 +153,7 @@ public class EnviarEmailForm extends JFrame {
      * Mejora de codigo, implementado la limpieza de los 
      * campos de "dirección, asunto y contenido" del correo electronico
      */
-    private void vaciar(){
+    public void vaciar(){
         
         direccionTextField.setText("");
         asuntoTextField.setText("");
@@ -164,7 +164,7 @@ public class EnviarEmailForm extends JFrame {
     /**
      * Mejora de codigo, implementado el cierre de la aplicación
      */
-    private void cerrar(){
+    public void cerrar(){
         System.exit(DISPOSE_ON_CLOSE);
     }
     
