@@ -21,12 +21,24 @@ public class EmailSenderTest
     }
   
     @Test
-    public void firstTest()
+    public void siemprePassTrueTest()
+    {
+        assertTrue(true);
+    }
+    
+    @Test
+    public void enviarTest()
     {
         String destino = "cristo.mc@gmail.com";
         String asunto = "Que tal";
         String mensaje = "Que pasa cristo? Como va la vida?";
         boolean esEnviado = this.emailSender.enviar(destino, asunto, mensaje);
         assertTrue(esEnviado);
+    }
+    
+    @Test
+    public void siemprePassFalseTest()
+    {
+        assertFalse(false);
     }
 }
