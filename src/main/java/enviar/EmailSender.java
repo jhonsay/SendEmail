@@ -24,15 +24,15 @@ public class EmailSender {
     }
 
     public boolean enviar(String destino, String asunto, String mensaje) {
-        Properties props = new Properties();
-        props.put("mail.transport.protocol", "smtp");
-        props.put("mail.smtp.host", "smtp.mail.yahoo.es");
-        props.put("mail.smtp.auth", "true");
-
-        Session session = Session.getInstance(props, auth);
-        session.setDebug(true);
-
         try {
+            Properties props = new Properties();
+            props.put("mail.transport.protocol", "smtp");
+            props.put("mail.smtp.host", "smtp.mail.yahoo.es");
+            props.put("mail.smtp.auth", "true");
+
+            Session session = Session.getInstance(props, auth);
+            //session.setDebug(true);
+
             MimeMessage msg = new MimeMessage(session);
             msg.setFrom(new InternetAddress(auth.getPasswordAuthentication().getUserName()));
             msg.setRecipient(Message.RecipientType.TO, new InternetAddress(destino));
